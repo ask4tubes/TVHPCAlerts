@@ -43,6 +43,6 @@ async def receive_alert(request: Request):
         response.raise_for_status()
 
         return {"status": "ok"}
+
     except Exception as e:
         return {"status": "error", "message": str(e)}
-
